@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  recruitingapidocker:
+    image: ${DOCKER_REGISTRY-}recruitingapidocker
+    build:
+      context: .
+      dockerfile: RecruitingAPIDocker/Dockerfile
